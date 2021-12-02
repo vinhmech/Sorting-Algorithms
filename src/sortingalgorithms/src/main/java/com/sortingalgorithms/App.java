@@ -34,19 +34,19 @@ public static void recursiveBubbleSort(int [] arr, int arrLength){
 
 // Recursive Selection Sort
 public static void recursiveSelectionSort(int [] arr, int arrLength, int i){
-    if (i == arrLength - 1){
+    if (i <= arrLength - 1){
         return;
     }
 
-    int indexOfMin = i;
+    int indexOfMax = i;
     for (int k = i + 1; k < arrLength; k++){
-        if (arr[k] > arr[indexOfMin]){
-            indexOfMin = k;
+        if (arr[k] > arr[indexOfMax]){
+            indexOfMax = k;
         }
     }
     int temp = arr[i];
-    arr[i] = arr[indexOfMin];
-    arr[indexOfMin] = temp;
+    arr[i] = arr[indexOfMax];
+    arr[indexOfMax] = temp;
 
     recursiveSelectionSort(arr, arrLength, i + 1);
 }
@@ -79,23 +79,25 @@ public static void printArray(int [] arr){
 }
 
 // main function
-<<<<<<< HEAD
 public static void main( String[] args )
     {
-        int arr[] = {1,2,10,5,3,6,4,7,8,9};
-        //recursiveBubbleSort(arr, arr.length);
-        recursiveSelectionSort(arr, arr.length, 0);
-        //recursiveInsertionSort(arr, arr.length);
-        printArray(arr);
+        int testArray1[] = {2,4,7,5,8,5,3,9,6};
+        int testArray2[] = {3,1,5,8,2,6,4,9,7};
+        int testArray3[] = {6,3,7,2,1,6,5,4,9};
+
+        recursiveBubbleSort(testArray1, testArray1.length);
+        System.out.println("testArray1: ");
+        printArray(testArray1);
+
+        recursiveSelectionSort(testArray2, testArray2.length, 0);
+        System.out.println("\ntestArray2: ");
+        printArray(testArray2);
+
+        recursiveInsertionSort(testArray3, testArray3.length);
+        System.out.println("\ntestArray3: ");
+        printArray(testArray3);
     }
-=======
-// public static void main( String[] args )
-//     {
-//         int arr[] = {1,2,10,5,3,6,4,7,8,9};
-//         //recursiveBubbleSort(arr, arr.length);
-//         //recursiveSelectionSort(arr, arr.length, 0);
-//         recursiveInsertionSort(arr, arr.length);
-//         printArray(arr);
-//     }
->>>>>>> ebe2976368d1e0acff6a07d79fd3a4040e3e5068
 }
+
+
+
