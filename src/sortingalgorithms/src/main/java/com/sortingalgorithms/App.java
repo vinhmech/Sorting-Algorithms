@@ -17,7 +17,7 @@ public class App
 
 // Recursive Bubble Sort
 public static void recursiveBubbleSort(int [] arr, int arrLength){
-    if (arrLength == 1){
+    if (arrLength <= 1){
         return;
     }
 
@@ -83,8 +83,8 @@ public static void main( String[] args )
     {
         int arr[] = {1,2,10,5,3,6,4,7,8,9};
         //recursiveBubbleSort(arr, arr.length);
-        //recursiveSelectionSort(arr, arr.length, 0);
-        recursiveInsertionSort(arr, arr.length);
+        recursiveSelectionSort(arr, arr.length, 0);
+        //recursiveInsertionSort(arr, arr.length);
         printArray(arr);
     }
 }
