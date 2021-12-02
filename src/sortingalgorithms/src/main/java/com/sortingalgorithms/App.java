@@ -34,7 +34,7 @@ public static void recursiveBubbleSort(int [] arr, int arrLength){
 
 // Recursive Selection Sort
 public static void recursiveSelectionSort(int [] arr, int arrLength, int i){
-    if (i <= arrLength - 1){
+    if (i >= arrLength - 1){
         return;
     }
 
