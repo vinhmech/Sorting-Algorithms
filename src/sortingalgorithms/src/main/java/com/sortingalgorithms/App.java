@@ -79,6 +79,7 @@ public static void printArray(int [] arr){
 }
 
 // main function
+<<<<<<< HEAD
 public static void main( String[] args )
     {
         int arr[] = {1,2,10,5,3,6,4,7,8,9};
@@ -87,4 +88,14 @@ public static void main( String[] args )
         //recursiveInsertionSort(arr, arr.length);
         printArray(arr);
     }
+=======
+// public static void main( String[] args )
+//     {
+//         int arr[] = {1,2,10,5,3,6,4,7,8,9};
+//         //recursiveBubbleSort(arr, arr.length);
+//         //recursiveSelectionSort(arr, arr.length, 0);
+//         recursiveInsertionSort(arr, arr.length);
+//         printArray(arr);
+//     }
+>>>>>>> ebe2976368d1e0acff6a07d79fd3a4040e3e5068
 }
